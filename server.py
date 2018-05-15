@@ -17,6 +17,12 @@ def index():
         new_filename = sorted(files)[-1] + 1
     else:
         new_filename = 1
+
+    with open('svg-style.css') as f:
+        style = f.read()
+
+    svg = svg.replace('<defs>', style + '<defs>')
+
     with open('{}/{}.svg'.format(filename, new_filename), 'w') as f:
         f.write(svg)
 

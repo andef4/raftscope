@@ -1,0 +1,117 @@
+<style>
+/* <![CDATA[ */
+#ring, #logsbg {
+  fill: #eeeeee;
+}
+
+.server {
+}
+
+.server path {
+  fill: none;
+  stroke: black;
+}
+
+.server.follower path {
+  stroke: #666666;
+}
+
+.server text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+.server.leader text.serverid {
+  fill: red;
+}
+
+.logs text.serverid.leader {
+  fill: red;
+}
+
+.server a,
+.server a:active,
+.server a:hover,
+.server a:focus,
+.server a:visited
+{
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.server .votes .have {
+  fill: black;
+  stroke: black;
+}
+
+.server .votes .coming {
+  fill: gray;
+  stroke: black;
+}
+
+.server .votes .no {
+  fill: none;
+  stroke: black;
+}
+
+.message {
+  stroke-width: 3;
+}
+
+.message.RequestVote {
+  fill:   #66c2a5;
+  stroke: #66c2a5;
+}
+
+.message.AppendEntries {
+  fill:   #fc8d62;
+  stroke: #fc8d62;
+}
+
+.message.request circle {
+}
+
+.message.reply circle {
+  /* fill with no opacity so it's clickable */
+  fill-opacity: 0;
+}
+
+.logs text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+.log {
+  fill: none;
+  stroke: gray;
+}
+
+.entry rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.entry.uncommitted rect {
+}
+
+.entry.committed rect {
+}
+
+.entry text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+#pause.paused {
+  fill:white;
+}
+
+#pause.resumed {
+  fill:none;
+}
+/* ]]> */
+</style>
