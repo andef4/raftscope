@@ -8,6 +8,7 @@ $(function () {
         const svg = $('svg')[0].outerHTML;
         $.post('http://localhost:3000', {
             filename,
+            saveData,
             svg
         })
     })
