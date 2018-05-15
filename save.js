@@ -15,7 +15,7 @@ $(function () {
                 svg
             })
         }
-    }, 500);
+    }, 200);
 
     $('#filename').focus()
 })
