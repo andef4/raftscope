@@ -648,6 +648,8 @@ render.update = function() {
 })();
 
 $(window).keyup(function(e) {
+  if (e.target.id == "filename")
+    return;
   if (e.target.id == "title")
     return;
   var leader = getLeader();
