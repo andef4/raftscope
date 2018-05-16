@@ -14,9 +14,9 @@ def main():
 
     files = sorted(os.listdir(input_dir))
     for f in files:
-        os.system('inkscape -D -z --file={} --export-png={}'.format(
+        os.system('inkscape -D -z --file={} --export-pdf={} --export-latex'.format(
             os.path.join(input_dir, f),
-            os.path.join(output_dir, f.replace('svg', 'png'))
+            os.path.join(output_dir, f.replace('svg', 'pdf'))
         ))
 
 if __name__ == '__main__':
