@@ -12,9 +12,6 @@ def index():
 
     if not os.path.exists(filename):
         os.mkdir(filename)
-    #output_dir = filename + '-scaled'
-    #if not os.path.exists(output_dir):
-    #    os.mkdir(output_dir)
 
     files = os.listdir(filename)
     if files:
@@ -36,9 +33,7 @@ def index():
     with open('{}/{}.svg'.format(filename, new_filename), 'w') as f:
         f.write(svg)
 
-    #os.system('inkscape -D -z --file={}/{}.svg --export-png={}/{}.png'.format(
-    #    filename, new_filename, output_dir, new_filename
-    #))
+    os.system('svgo {}/{}.svg --enable=inlineStyles  --config \'{{ "plugins": [ {{ "inlineStyles": {{ "onlyMatchedOnce": false }} }}] }}\''.format(filename, new_filename))
 
     return ''
 
