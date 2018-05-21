@@ -23,12 +23,13 @@ def index():
     with open('svg-style.css') as f:
         style = f.read()
 
+    svg = svg.replace('<defs>', style + '<defs>')
+
+    xml = et.fromstring(svg)
     if not save_data:
-        svg = svg.replace('<defs>', style + '<defs>')
-        xml = et.fromstring(svg)
         logs = xml.find('.//{http://www.w3.org/2000/svg}g[@class="logs"]')
         logs.getparent().remove(logs)
-        svg = et.tostring(xml)
+    svg = et.tostring(xml)
 
     with open('{}/{}.svg'.format(filename, new_filename), 'w') as f:
         f.write(svg)
