@@ -24,13 +24,13 @@ def main():
         with open(output_file) as f:
             text = f.read()
 
-        for match in re.finditer(r'\\put\(\d\.\d{8},(\d\.\d{8})\)', text):
+        for match in re.finditer(r'\\put\(\d\.\d+,(\d\.\d+)\)', text):
             x = float(match.group(1))
-            x -= 0.02
-            if x < 0:
-                x = '{0:.7f}'.format(x)
-            else:
-                x = '{0:.8f}'.format(x)
+            x -= 0.01
+            
+            x = '{0:.6f}'.format(x)
+            x = x.ljust(match.end(1) - match.start(1))
+
             text = text[:match.start(1)] + x + text[match.end(1):]
 
         text = re.sub(r'(\d+.pdf)', input_dir + r'/\1', text)
