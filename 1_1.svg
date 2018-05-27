@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="border:0 solid #000" width="745" height="400">
+    <style></style>
+    <defs>
+        <marker id="TriangleOutM" orient="auto" overflow="visible">
+            <path d="M5.77 0l-8.65 5V-5l8.65 5z" transform="scale(.4)" />
+        </marker>
+        <marker id="TriangleOutS-RequestVote" orient="auto" overflow="visible">
+            <path d="M1.731 0L-.864 1.5v-3L1.731 0z" class="RequestVote" fill="#66c2a5" stroke="#66c2a5" stroke-width=".8999999999999999" />
+        </marker>
+        <marker id="TriangleOutS-AppendEntries" orient="auto" overflow="visible">
+            <path d="M1.731 0L-.864 1.5v-3L1.731 0z" class="AppendEntries" fill="#fc8d62" stroke="#fc8d62" stroke-width=".8999999999999999" />
+        </marker>
+    </defs>
+    <circle cx="210" cy="210" r="150" fill="#eee" />
+    <g class="resumed" fill="none">
+        <path d="M156.429 145.714h42.857v128.572h-42.857zM220.714 145.714h42.857v128.572h-42.857z" />
+    </g>
+    <g id="servers">
+        <g id="server-1" class="follower">
+            <text class="serverid" x="210" y="10" style="text-align:center" text-anchor="middle" dominant-baseline="central">S1</text>
+            <a font-size="inherit">
+                <circle class="background" cx="210" cy="60" r="30" fill="#8da0cb" />
+                <path d="M210 27.5a32.5 32.5 0 0 1 0 65m0 0a32.5 32.5 0 0 1-32.222-28.26" stroke-width="5" stroke="#666" fill="none" />
+                <text class="term" x="210" y="60" style="text-align:center" text-anchor="middle" dominant-baseline="central">2</text>
+            </a>
+        </g>
+        <g id="server-2" class="follower">
+            <text class="serverid" x="400.211" y="148.197" style="text-align:center" text-anchor="middle" dominant-baseline="central">S2</text>
+            <a font-size="inherit">
+                <circle class="background" cx="352.658" cy="163.647" r="30" fill="#8da0cb" />
+                <path d="M352.658 131.147a32.5 32.5 0 0 1 0 65m0 0a32.5 32.5 0 0 1-5.963-.551" stroke-width="5" stroke="#666" fill="none" />
+                <text class="term" x="352.658" y="163.647" style="text-align:center" text-anchor="middle" dominant-baseline="central">2</text>
+            </a>
+        </g>
+        <g id="server-3" class="follower">
+            <text class="serverid" x="327.557" y="371.803" style="text-align:center" text-anchor="middle" dominant-baseline="central">S3</text>
+            <a font-size="inherit">
+                <circle class="background" cx="298.168" cy="331.353" r="30" fill="#8da0cb" />
+                <path d="M298.168 298.853a32.5 32.5 0 0 1 0 65m0 0a32.5 32.5 0 0 1-2.944-.134" stroke-width="5" stroke="#666" fill="none" />
+                <text class="term" x="298.168" y="331.353" style="text-align:center" text-anchor="middle" dominant-baseline="central">2</text>
+            </a>
+        </g>
+        <g id="server-4" class="leader">
+            <text class="serverid" x="92.443" y="371.803" style="text-align:center" fill="red" text-anchor="middle" dominant-baseline="central">S4</text>
+            <a font-size="inherit">
+                <circle class="background" cx="121.832" cy="331.353" r="30" fill="#8da0cb" />
+                <path d="M121.832 298.853a32.5 32.5 0 0 1 0 65m0 0a32.5 32.5 0 0 1 0-65" stroke-width="5" fill="none" stroke="#000" />
+                <text class="term" x="121.832" y="331.353" style="text-align:center" text-anchor="middle" dominant-baseline="central">2</text>
+            </a>
+        </g>
+        <g id="server-5" class="follower">
+            <text class="serverid" x="19.789" y="148.197" style="text-align:center" text-anchor="middle" dominant-baseline="central">S5</text>
+            <a font-size="inherit">
+                <circle class="background" cx="67.342" cy="163.647" r="30" fill="#8da0cb" />
+                <path d="M67.342 131.147a32.5 32.5 0 0 1 0 65m0 0a32.5 32.5 0 0 1-24.094-54.311" stroke-width="5" stroke="#666" fill="none" />
+                <text class="term" x="67.342" y="163.647" style="text-align:center" text-anchor="middle" dominant-baseline="central">2</text>
+            </a>
+        </g>
+    </g>
+    <g class="logs">
+        <path fill="#eee" d="M430 50h320v270H430z" />
+        <g id="log-indexes" text-anchor="middle">
+            <text x="484.091" y="66.333" style="text-align:center" dominant-baseline="central">1</text>
+            <text x="510.273" y="66.333" style="text-align:center" dominant-baseline="central">2</text>
+            <text x="536.455" y="66.333" style="text-align:center" dominant-baseline="central">3</text>
+            <text x="562.636" y="66.333" style="text-align:center" dominant-baseline="central">4</text>
+            <text x="588.818" y="66.333" style="text-align:center" dominant-baseline="central">5</text>
+            <text x="615" y="66.333" style="text-align:center" dominant-baseline="central">6</text>
+            <text x="641.182" y="66.333" style="text-align:center" dominant-baseline="central">7</text>
+            <text x="667.364" y="66.333" style="text-align:center" dominant-baseline="central">8</text>
+            <text x="693.545" y="66.333" style="text-align:center" dominant-baseline="central">9</text>
+            <text x="719.727" y="66.333" style="text-align:center" dominant-baseline="central">10</text>
+        </g>
+        <g id="log-S1">
+            <text class="serverid follower" x="451" y="99.5" style="text-align:center" text-anchor="middle" dominant-baseline="central">S1</text>
+            <path fill="none" stroke="gray" d="M471 83.167h26.182v32.667H471zM497.182 83.167h26.182v32.667h-26.182zM523.364 83.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M549.545 83.167h26.182v32.667h-26.182zM575.727 83.167h26.182v32.667h-26.182zM601.909 83.167h26.182v32.667h-26.182zM628.091 83.167h26.182v32.667h-26.182zM654.273 83.167h26.182v32.667h-26.182zM680.455 83.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M706.636 83.167h26.182v32.667h-26.182z" />
+            <circle cx="471" cy="115.833" r="5" />
+            <path d="M484.09 126.722v-5.444" stroke-width="3" marker-end="url(#TriangleOutM)" stroke="#000" />
+        </g>
+        <g id="log-S2">
+            <text class="serverid follower" x="451" y="148.5" style="text-align:center" text-anchor="middle" dominant-baseline="central">S2</text>
+            <path fill="none" stroke="gray" d="M471 132.167h26.182v32.667H471zM497.182 132.167h26.182v32.667h-26.182zM523.364 132.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M549.545 132.167h26.182v32.667h-26.182zM575.727 132.167h26.182v32.667h-26.182zM601.909 132.167h26.182v32.667h-26.182zM628.091 132.167h26.182v32.667h-26.182zM654.273 132.167h26.182v32.667h-26.182zM680.455 132.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M706.636 132.167h26.182v32.667h-26.182z" />
+            <circle cx="471" cy="164.833" r="5" />
+            <path d="M484.09 175.722v-5.444" stroke-width="3" marker-end="url(#TriangleOutM)" stroke="#000" />
+        </g>
+        <g id="log-S3">
+            <text class="serverid follower" x="451" y="197.5" style="text-align:center" text-anchor="middle" dominant-baseline="central">S3</text>
+            <path fill="none" stroke="gray" d="M471 181.167h26.182v32.667H471zM497.182 181.167h26.182v32.667h-26.182zM523.364 181.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M549.545 181.167h26.182v32.667h-26.182zM575.727 181.167h26.182v32.667h-26.182zM601.909 181.167h26.182v32.667h-26.182zM628.091 181.167h26.182v32.667h-26.182zM654.273 181.167h26.182v32.667h-26.182zM680.455 181.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M706.636 181.167h26.182v32.667h-26.182z" />
+            <circle cx="471" cy="213.833" r="5" />
+            <path d="M484.09 224.722v-5.444" stroke-width="3" marker-end="url(#TriangleOutM)" stroke="#000" />
+        </g>
+        <g id="log-S4">
+            <text class="serverid leader" x="451" y="246.5" style="text-align:center" fill="red" text-anchor="middle" dominant-baseline="central">S4</text>
+            <path fill="none" stroke="gray" d="M471 230.167h26.182v32.667H471zM497.182 230.167h26.182v32.667h-26.182zM523.364 230.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M549.545 230.167h26.182v32.667h-26.182zM575.727 230.167h26.182v32.667h-26.182zM601.909 230.167h26.182v32.667h-26.182zM628.091 230.167h26.182v32.667h-26.182zM654.273 230.167h26.182v32.667h-26.182zM680.455 230.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M706.636 230.167h26.182v32.667h-26.182z" />
+        </g>
+        <g id="log-S5">
+            <text class="serverid follower" x="451" y="295.5" style="text-align:center" text-anchor="middle" dominant-baseline="central">S5</text>
+            <path fill="none" stroke="gray" d="M471 279.167h26.182v32.667H471zM497.182 279.167h26.182v32.667h-26.182zM523.364 279.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M549.545 279.167h26.182v32.667h-26.182zM575.727 279.167h26.182v32.667h-26.182zM601.909 279.167h26.182v32.667h-26.182zM628.091 279.167h26.182v32.667h-26.182zM654.273 279.167h26.182v32.667h-26.182zM680.455 279.167h26.182v32.667h-26.182z" />
+            <path fill="none" stroke="gray" d="M706.636 279.167h26.182v32.667h-26.182z" />
+            <circle cx="471" cy="311.833" r="5" />
+            <path d="M484.09 322.722v-5.444" stroke-width="3" marker-end="url(#TriangleOutM)" stroke="#000" />
+        </g>
+    </g>
+    <rect style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00941551px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" id="rect3511" width="403.62491" height="13.333868" x="10.012172" y="246.55695" />
+</svg>
